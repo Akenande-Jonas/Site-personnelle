@@ -1,126 +1,166 @@
-/* GENERAL */
-*{
-  margin: 0;
-  box-sizing: border-box;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: .9rem;
-  line-height: 1.5;
+/* Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333;
 }
 
-a{
-  text-decoration: none;
-  color: #4472C4;
+/* Container */
+.cv-container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
 }
 
-a:hover{
-  text-decoration: underline;
+/* Left Column */
+.left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    border-right: 1px solid #ddd;
 }
 
-p{
-  margin: 0 0 1rem;
+.left-column .section {
+    margin-bottom: 20px;
 }
 
-h1{
-  margin: 0 0 1rem;
-  font-size: 2.5rem;
-  margin-bottom: .5rem;
+.left-column h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-h2{
-  margin: 0 0 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+/* Social Links */
+.left-column a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.text-blue{
-  color: #4472C4;
+.left-column a:hover {
+    color: #007bff;
 }
 
-.text-darkblue{
-  color: #002060;
+.left-column .section a i {
+    margin-right: 8px;
 }
 
-.text-uppercase{
-  text-transform: uppercase; 
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.icon{
-  margin-right: .5rem;
+/* Right Column */
+.right-column {
+    width: 70%;
+    padding: 20px;
 }
 
-.cv-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "left-column right-column right-column";
-  width: 1200px;
-  margin: 100px auto;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.section{
-  margin-bottom: 1.5rem;
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
 }
 
-/* LEFT COLUMN */
-.left-column{
-  grid-area: left-column;
-  padding: 50px;
-  background-color: #4472C4;
-  color: white;
+.text-blue {
+    color: #007bff;
 }
 
-.portait{
-  border-radius: 50%;
-  max-width: 150px;
-  margin: auto;
-  display: block;
-  margin-bottom: 50px;
+/* Contact Information */
+.header .infos {
+    list-style-type: none;
+    padding: 0;
 }
 
-.skills{
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  margin: 0 0 1rem;
+.header .infos li {
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
-/* RIGHT COLUMN */
-.right-column{
-  grid-area: right-column;
-  display: grid;
-  grid-template-rows: 250px 1fr;
-  grid-template-areas: 
-    "header"
-    "content";
+.header .infos a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* HEADER */
-.header{
-  grid-area: header;
-  padding: 50px;
-  background-color: #F2F2F2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header .infos a:hover {
+    text-decoration: underline;
 }
 
-.infos{
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
+/* Content Sections */
+.content .section {
+    margin-bottom: 20px;
 }
 
-/* CONTENT */
-.content{
-  grid-area: content;
-  padding: 50px;
+.content .section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.experience-list{
-  list-style-type: circle;
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Skills */
+.skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.skills .icon {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+/* Icons */
+.icon {
+    font-size: 14px;
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        border: none;
+    }
+
+    .header {
+        text-align: center;
+    }
 }
