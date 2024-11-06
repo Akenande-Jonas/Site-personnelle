@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site personnalisé</title>
+    <link rel="stylesheet" href="S-p.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://vistoenanime.com/wp-content/uploads/2019/03/7-logo-brand-legend-of-zelda-1024x437.png" alt="Image d'en-tête" class="header-image">
+        <h1>Bienvenue sur mon site web</h1>
+        <nav>
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="Site personnalisé.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="service1.html">Page 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="service2.html">Page 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://fr.pinterest.com/jonasakenande7/pins/">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="Edition spéciale photos d'anime.html">Animes photos</a></li>
+                <li class="nav-item"><a class="nav-link" href="À propos & Contact.html">À propos & Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="CV.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Accueil</h2>
+                <div>
+                    <div class="slideshow-container" id="slideshow" aria-live="polite">
+                        <!-- Slides -->
+                        <div class="slide fade" role="group" aria-label="Image 1 sur 6">
+                            <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaTwilightPrincessHD_image1600w.jpg" alt="Image 1">
+                        </div>
+                        <div class="slide fade" role="group" aria-label="Image 2 sur 6">
+                            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/t/the-legend-of-zelda-skyward-sword-hd-switch/hero" alt="Image 2">
+                        </div>
+                        <div class="slide fade" role="group" aria-label="Image 3 sur 6">
+                            <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/gamecube_12/SI_GCN_TheLegendOfZeldaTheWindWaker_image1600w.jpg" alt="Image 3">
+                        </div>
+                        <div class="slide fade" role="group" aria-label="Image 4 sur 6">
+                            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/t/the-legend-of-zelda-links-awakening-switch/hero" alt="Image 4">
+                        </div>
+                        <div class="slide fade" role="group" aria-label="Image 5 sur 6">
+                            <img src="https://gameover-pnx.com/wp-content/uploads/2024/06/the-legend-of-zelda-echoes-of-wisdom.jpg" alt="Image 5">
+                        </div>
+                        <div class="slide fade" role="group" aria-label="Image 6 sur 6">
+                            <img src="https://i0.wp.com/viciados.net/wp-content/uploads/2023/05/The-Legend-of-Zelda-Tears-of-the-Kingdom-Switch.webp" alt="Image 6">
+                        </div>
+                
+                        <!-- Indicateurs (points) -->
+                        <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)" aria-label="Aller à l'image 1"></span>
+                        <span class="dot" onclick="currentSlide(2)" aria-label="Aller à l'image 2"></span>
+                        <span class="dot" onclick="currentSlide(3)" aria-label="Aller à l'image 3"></span>
+                        <span class="dot" onclick="currentSlide(4)" aria-label="Aller à l'image 4"></span>
+                        <span class="dot" onclick="currentSlide(5)" aria-label="Aller à l'image 5"></span>
+                        <span class="dot" onclick="currentSlide(6)" aria-label="Aller à l'image 6"></span>
+                        </div>
+                    </div>
+                </div>
+        </section> 
+    </main>
+    <footer>
+        <p>&copy; 2023 Mon Site Web. Tous droits sont réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

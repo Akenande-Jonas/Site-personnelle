@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Sécurité</title>
+    <link rel="stylesheet" href="sécu.css">
+</head>
+<body>
+
+    <div class="security-container">
+        <h1>Accès Sécurisé</h1>
+        <form class="login-form" onsubmit="return checkLogin()">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Se Connecter</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Mon Site Web. Tous droits sont réservés.</p>
+    </footer>
+
+    <!-- JavaScript pour la vérification -->
+    <script src="sécu.js"></script>
+</body>
+</html>

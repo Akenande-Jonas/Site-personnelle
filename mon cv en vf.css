@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Container */
+.cv-container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Left Column */
+.left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.left-column .section {
+    margin-bottom: 20px;
+}
+
+.left-column h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Social Links */
+.left-column a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.left-column a:hover {
+    color: #007bff;
+}
+
+.left-column .section a i {
+    margin-right: 8px;
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Right Column */
+.right-column {
+    width: 70%;
+    padding: 20px;
+}
+
+.header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.text-blue {
+    color: #007bff;
+}
+
+/* Contact Information */
+.header .infos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header .infos li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.header .infos a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.header .infos a:hover {
+    text-decoration: underline;
+}
+
+/* Content Sections */
+.content .section {
+    margin-bottom: 20px;
+}
+
+.content .section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Skills */
+.skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.skills .icon {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+/* Icons */
+.icon {
+    font-size: 14px;
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        border: none;
+    }
+
+    .header {
+        text-align: center;
+    }
+}
